@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Oct  7 12:15:59 2022
+# Process ID: 1216628
+# Current directory: /home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.runs/impl_1
+# Command line: vivado -log ringoscillator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ringoscillator.tcl -notrace
+# Log file: /home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.runs/impl_1/ringoscillator.vdi
+# Journal file: /home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.runs/impl_1/vivado.jou
+# Running On: mitrelab-OptiPlex-5050, OS: Linux, CPU Frequency: 3602.618 MHz, CPU Physical cores: 4, Host memory: 8193 MB
+#-----------------------------------------------------------

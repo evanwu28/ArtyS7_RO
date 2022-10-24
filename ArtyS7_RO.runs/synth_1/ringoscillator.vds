@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Oct 10 17:53:25 2022
+# Process ID: 1555568
+# Current directory: /home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.runs/synth_1
+# Command line: vivado -log ringoscillator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ringoscillator.tcl
+# Log file: /home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.runs/synth_1/ringoscillator.vds
+# Journal file: /home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.runs/synth_1/vivado.jou
+# Running On: mitrelab-OptiPlex-5050, OS: Linux, CPU Frequency: 3400.000 MHz, CPU Physical cores: 4, Host memory: 8193 MB
+#-----------------------------------------------------------
+source ringoscillator.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/utils_1/imports/synth_1/ringoscillator.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/utils_1/imports/synth_1/ringoscillator.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ringoscillator -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1555586
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2623.641 ; gain = 0.000 ; free physical = 2418 ; free virtual = 5517
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ringoscillator' [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'notgate' [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'notgate' (0#1) [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ringoscillator' (0#1) [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2623.641 ; gain = 0.000 ; free physical = 3498 ; free virtual = 6599
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2623.641 ; gain = 0.000 ; free physical = 3498 ; free virtual = 6600
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2623.641 ; gain = 0.000 ; free physical = 3498 ; free virtual = 6600
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.641 ; gain = 0.000 ; free physical = 3495 ; free virtual = 6598
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mitrelab/Desktop/Arty-S7-50-Master.xdc]
+Finished Parsing XDC File [/home/mitrelab/Desktop/Arty-S7-50-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mitrelab/Desktop/Arty-S7-50-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ringoscillator_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ringoscillator_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2655.656 ; gain = 0.000 ; free physical = 3396 ; free virtual = 6513
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2655.656 ; gain = 0.000 ; free physical = 3396 ; free virtual = 6513
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3458 ; free virtual = 6575
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3458 ; free virtual = 6575
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3458 ; free virtual = 6575
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3453 ; free virtual = 6573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3436 ; free virtual = 6563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3320 ; free virtual = 6454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3319 ; free virtual = 6454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_2/O (LUT2)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:48]
+     1: i_2/I0 (LUT2)
+      : not10/Y
+     2: not10/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     3: not10/i_0/I0 (LUT1)
+      : not10/X
+      : not9/Y
+     4: not9/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     5: not9/i_0/I0 (LUT1)
+      : not9/X
+      : not8/Y
+     6: not8/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     7: not8/i_0/I0 (LUT1)
+      : not8/X
+      : not7/Y
+     8: not7/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     9: not7/i_0/I0 (LUT1)
+      : not7/X
+      : not6/Y
+    10: not6/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    11: not6/i_0/I0 (LUT1)
+      : not6/X
+      : not5/Y
+    12: not5/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    13: not5/i_0/I0 (LUT1)
+      : not5/X
+      : not4/Y
+    14: not4/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    15: not4/i_0/I0 (LUT1)
+      : not4/X
+      : not3/Y
+    16: not3/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    17: not3/i_0/I0 (LUT1)
+      : not3/X
+      : not2/Y
+    18: not2/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    19: not2/i_0/I0 (LUT1)
+      : not2/X
+      : not1/Y
+    20: not1/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    21: not1/i_0/I0 (LUT1)
+      : not1/X
+      : not0/Y
+    22: not0/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    23: not0/i_0/I0 (LUT1)
+      : not0/X
+    24: i_2/O (LUT2)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:48]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_2"
+Found timing loop:
+     0: i_0/O (LUT2)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:126]
+     1: i_0/I0 (LUT2)
+      : not02/Y
+     2: not02/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     3: not02/i_0/I0 (LUT1)
+      : not02/X
+      : not01/Y
+     4: not01/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     5: not01/i_0/I0 (LUT1)
+      : not01/X
+      : not00/Y
+     6: not00/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00/i_0/I0 (LUT1)
+      : not00/X
+     8: i_0/O (LUT2)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:126]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_0"
+Found timing loop:
+     0: i_1/O (LUT2)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:202]
+     1: i_1/I0 (LUT2)
+      : not004/Y
+     2: not004/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     3: not004/i_0/I0 (LUT1)
+      : not004/X
+      : not003/Y
+     4: not003/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     5: not003/i_0/I0 (LUT1)
+      : not003/X
+      : not002/Y
+     6: not002/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     7: not002/i_0/I0 (LUT1)
+      : not002/X
+      : not001/Y
+     8: not001/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     9: not001/i_0/I0 (LUT1)
+      : not001/X
+      : not000/Y
+    10: not000/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    11: not000/i_0/I0 (LUT1)
+      : not000/X
+    12: i_1/O (LUT2)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:202]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1"
+Found timing loop:
+     0: i_3/O (LUT2)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:242]
+     1: i_3/I0 (LUT2)
+      : not00014/Y
+     2: not00014/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     3: not00014/i_0/I0 (LUT1)
+      : not00014/X
+      : not00013/Y
+     4: not00013/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     5: not00013/i_0/I0 (LUT1)
+      : not00013/X
+      : not00012/Y
+     6: not00012/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00012/i_0/I0 (LUT1)
+      : not00012/X
+      : not00011/Y
+     8: not00011/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+     9: not00011/i_0/I0 (LUT1)
+      : not00011/X
+      : not00010/Y
+    10: not00010/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    11: not00010/i_0/I0 (LUT1)
+      : not00010/X
+      : not0009/Y
+    12: not0009/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    13: not0009/i_0/I0 (LUT1)
+      : not0009/X
+      : not0008/Y
+    14: not0008/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    15: not0008/i_0/I0 (LUT1)
+      : not0008/X
+      : not0007/Y
+    16: not0007/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    17: not0007/i_0/I0 (LUT1)
+      : not0007/X
+      : not0006/Y
+    18: not0006/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    19: not0006/i_0/I0 (LUT1)
+      : not0006/X
+      : not0005/Y
+    20: not0005/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    21: not0005/i_0/I0 (LUT1)
+      : not0005/X
+      : not0004/Y
+    22: not0004/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    23: not0004/i_0/I0 (LUT1)
+      : not0004/X
+      : not0003/Y
+    24: not0003/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    25: not0003/i_0/I0 (LUT1)
+      : not0003/X
+      : not0002/Y
+    26: not0002/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    27: not0002/i_0/I0 (LUT1)
+      : not0002/X
+      : not0001/Y
+    28: not0001/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    29: not0001/i_0/I0 (LUT1)
+      : not0001/X
+      : not0000/Y
+    30: not0000/i_0/O (LUT1)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:29]
+    31: not0000/i_0/I0 (LUT1)
+      : not0000/X
+    32: i_3/O (LUT2)
+      [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/ringoscillator.v:242]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_3"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3310 ; free virtual = 6446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3311 ; free virtual = 6446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3311 ; free virtual = 6446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3311 ; free virtual = 6446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3311 ; free virtual = 6446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3311 ; free virtual = 6446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3311 ; free virtual = 6446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |    34|
+|2     |LUT2 |     4|
+|3     |IBUF |     4|
+|4     |OBUF |     8|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2655.656 ; gain = 32.016 ; free physical = 3311 ; free virtual = 6446
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 4 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2655.656 ; gain = 0.000 ; free physical = 3359 ; free virtual = 6495
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2655.664 ; gain = 32.016 ; free physical = 3359 ; free virtual = 6495
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2655.664 ; gain = 0.000 ; free physical = 3356 ; free virtual = 6493
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2655.664 ; gain = 0.000 ; free physical = 3413 ; free virtual = 6553
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 8260afe6
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 1 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2655.664 ; gain = 32.023 ; free physical = 3606 ; free virtual = 6747
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/mitrelab/VivadoProjects/ArtyS7_RO/ArtyS7_RO.runs/synth_1/ringoscillator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ringoscillator_utilization_synth.rpt -pb ringoscillator_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 10 17:53:58 2022...
