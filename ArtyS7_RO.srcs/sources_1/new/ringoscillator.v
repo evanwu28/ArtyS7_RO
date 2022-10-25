@@ -337,5 +337,7 @@ module ringoscillator(
                 
         assign R_out3 = x3[14];
         assign a3 = x3[14] & R_in3;
+        
+
   
 endmodule

@@ -119,6 +119,10 @@ set_property src_info {type:XDC file:1 line:99 export:INPUT save:INPUT read:READ
 set_property BEL D6LUT [get_cells not00014/Y_INST_0];
 set_property src_info {type:XDC file:1 line:100 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC SLICE_X65Y0 [get_cells not00014/Y_INST_0];
+set_property src_info {type:XDC file:1 line:103 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN F14   IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L13P_T2_MRCC_15 Sch=uclk
+set_property src_info {type:XDC file:1 line:104 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -add -name sys_clk_pin -period 83.333 -waveform {0 41.667} [get_ports { clk }];
 set_property src_info {type:XDC file:1 line:109 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H14   IOSTANDARD LVCMOS33 } [get_ports { R_in }]; #IO_L20N_T3_A19_15 Sch=sw[0]
 set_property src_info {type:XDC file:1 line:110 export:INPUT save:INPUT read:READ} [current_design]
@@ -143,3 +147,5 @@ set_property src_info {type:XDC file:1 line:201 export:INPUT save:INPUT read:REA
 set_property -dict { PACKAGE_PIN R11   IOSTANDARD LVCMOS33 } [get_ports { R_out2 }]; #IO_L23P_T3_A03_D19_14        Sch=jd8/ck_io[28]
 set_property src_info {type:XDC file:1 line:202 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T13   IOSTANDARD LVCMOS33 } [get_ports { R_out3 }]; #IO_L22N_T3_A04_D20_14        Sch=jd7/ck_io[29]
+set_property src_info {type:XDC file:1 line:203 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T12   IOSTANDARD LVCMOS33 } [get_ports { cnt }]; #IO_L22P_T3_A05_D21_14        Sch=jd4/ck_io[30]
